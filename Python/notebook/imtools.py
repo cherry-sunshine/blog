@@ -1,17 +1,17 @@
+#这是文件处理操作
 import os
 from PIL import Image
 from pylab import *
 from numpy import *
 
 
-
+#获取以.jpg结尾的图像列表
 def get_imlist(path):
-    """    Returns a list of filenames for 
-        all jpg images in a directory. """
+  
         
     return [os.path.join(path,f) for f in os.listdir(path) if f.endswith('.jpg')]
 
-
+#计算图像列表中图像的均值
 def compute_average(imlist):
     """    Compute the average of a list of images. """
     
@@ -32,7 +32,7 @@ def compute_average(imlist):
     # return average as uint8
     return array(averageim, 'uint8')
 
-    
+#将列表中的图像转化成灰度图像    
 def convert_to_grayscale(imlist):
     """    Convert a set of images to grayscale. """
     
@@ -40,7 +40,7 @@ def convert_to_grayscale(imlist):
         im = Image.open(imname).convert("L")
         im.save(imname)
 
-
+#将一幅图像设置成另一幅图像的大小
 def imresize(im,sz):
     """    Resize an image array using PIL. """
     pil_im = Image.fromarray(uint8(im))
