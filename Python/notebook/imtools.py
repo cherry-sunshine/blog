@@ -47,7 +47,7 @@ def imresize(im,sz):
     
     return array(pil_im.resize(sz))
 
-
+#对一幅灰度图像直方图均衡化
 def histeq(im,nbr_bins=256):
     """    Histogram equalization of a grayscale image. """
     
@@ -59,7 +59,7 @@ def histeq(im,nbr_bins=256):
     # use linear interpolation of cdf to find new pixel values
     im2 = interp(im.flatten(),bins[:-1],cdf)
     
-    return im2.reshape(im.shape), cdf
+    return im2.reshape(im.shape), cdf   #im2.reshape(im.shape)
     
     
 def plot_2D_boundary(plot_range,points,decisionfcn,labels,values=[0]):
