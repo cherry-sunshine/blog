@@ -11,8 +11,10 @@
 ## list列表操作
 
 列表的增删改查
+参考：https://www.runoob.com/python/python-lists.html
 
 ## Python图像基本操作
 notebook文件夹中code
 
 ## Python异常处理
+参考：https://www.runoob.com/python/python-exceptions.html
