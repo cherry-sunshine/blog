@@ -1,0 +1,28 @@
+eval(str) #用来计算在字符串中的有效Python表达式,并返回一个对象
+repr(x) #将对象 x 转换为表达式字符串
+complex(real [,imag]) #创建一个复数
+frozenset(s) #转换为不可变集合
+ord(x) #将一个字符转换为它的整数值
+hex(x) #将一个整数转换为一个十六进制字符串
+oct(x) #将一个整数转换为一个八进制字符串
+for (index,char) in enumerate(s):
+    print "index=%s ,char=%s" % (index,char)
+    
+dir(math)#查看 math 查看包中的内容:
+
+cmp(x, y) 函数在 python3.x 中不可用，可用以下函数替代：
+operator.lt(a, b)           lt(a, b) 相当于 a < b
+operator.le(a, b)           le(a,b) 相当于 a <= b
+operator.eq(a, b)           eq(a,b) 相当于 a == b
+operator.ne(a, b)           ne(a,b) 相当于 a != b
+operator.ge(a, b)           gt(a,b) 相当于 a >= b
+operator.gt(a, b)           ge(a, b)相当于 a > b
+
+ord('b')  # convert char to int  
+98  
+>>> chr(100)  # convert int to char  
+'d'  
+>>> unichr(100) # return a unicode byte  
+u'd'  
+
+abs(-10) 返回的是 10，而math.fabs(-10)返回的是 10.0
