@@ -18,3 +18,5 @@ notebook文件夹中code
 
 ## Python异常处理
 参考：https://www.runoob.com/python/python-exceptions.html
+
+## Python常见错误
