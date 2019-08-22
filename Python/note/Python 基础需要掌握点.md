@@ -20,3 +20,7 @@ notebook文件夹中code
 参考：https://www.runoob.com/python/python-exceptions.html
 
 ## Python常见错误
+note文件夹内
+
+## Python创建包
+note文件夹内bao文件
